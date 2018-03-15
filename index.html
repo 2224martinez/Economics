@@ -1,21 +1,178 @@
-<!DOCTYPE HTML>
-<title>Monopolies</title>
+<!DOCTYPE html>
+<html>
+<title>Monopoly</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
 <body>
-  <h1>Monopolies in History</h1>
-  <ul>
-    <li>De Beers</li>
-    <li>ATT</li>
-    <li>Standard Oil</li>
-  </ul>
-  <h1>What is a Monopoly?</h1>
-    <ul>
-      <li>Defenition</li>
-      <li>How are they made</li>
-      <li>How do they work</li>
-  </ul>
-  <h1>Pros of a Monopoly</h1>
-    <ul>
-      <li>They us less resoures because they are the only ones making a certain product</li>
-      <li>They also have the benefit of economy of scale which is when someone produces more of something</li>
-      <li>They end up getting their production costs down. If the costs are down then the benefit goes to consumers<li>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-theme-l1">Logo</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Monopoly</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Economics</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Other</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Other</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Extra</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Extra</a>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">What is a Monopoly</h1>
+      <p>How are they Made?<br>Mergers-When two companies become one<br>Copyright/ Patent- A patent is a government liscence that allows a company to sell a certain invention that is their own
+</p>
+    </div>
+    <div class="w3-third w3-container">
+      <p img src="img.jpg" alt="NAME BEFORE .JPG">PICTURE</p>
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Monopolies in History</h1>
+      <p>Standard Oil<br>It was founded by John D Rockefeller
+<br>Decided that he would try to merge with other companies 
+<br>Those that didn't want to he just ran out of business
+<br>Controlled 90% of oil in 1878
+<br>Many entities were said to be different but were all run by him
+<br>1892- OH filed suit they appealed
+<br>In 1912 the supreme court ruled against Rockefeller 
+<br>Broke up into different companies
+</p>
+      <br>
+      <p>DeBeers<br>Cecil Rhodes started everything in South Africa
+<br>Mines would usually merge since each one had something eachother needed
+<br>Cecil Rhodes ended up buying up a lot of mines and monopolized the diamond industry
+<br>In reality it was a cartel
+<p>
+      <br>
+      <p>AT&T<br>It was created by theodore vail
+<br>It was a network of companies called the bell system or Ma Bell
+<br>Vail made the slogan” One policy, one system, universal service”
+<br>Universal referred to the universal church so in reality he mean that they should be the only ones providing the service
+<br>They bought up many companies
+<br>There was a court case in 1974
+<br>They were forced to split up into several regional companies
+<p>
+    </div>
+    <div class="w3-third w3-container">
+      <p img src="image.jpg" alt="NAME BEFORE .JPG">PICTURE</p>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Antritrust Laws</h1>
+      <p>The Sherman Antitrust Act<br>The Sherman Act outlaws "every contract, combination, or conspiracy in restraint of trade," and any "monopolization, attempted monopolization, or conspiracy or combination to monopolize."<br>Penalties include a $100 million+ fine and can double
+</p>
+      <br>
+      <p>The Clayton Act<br>Has 4 Main Sections<br>Price Discrimination<br>Mergers<br>Director Interlocks<br>Exclusive Dealings</p>
+      <br>
+      <p>The Federal Trade Commission Act<br>Includes all of the other acts above and adds more<br>This act bans lying to people about what they are getting.
+</p>
+    </div>
+    <div class="w3-third w3-container">
+      <p img src="img.jpg" alt="NAME BEFORE .JPG">PICTURE</p>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Pros of a Monopoly</h1>
+      <p>Less Wastage<br>When there is only one producer that means there will be less counterfeits or copies<br>Not having duplicates means less resources are used to make an identical product</p>
+      <br>
+      <p>Economies of Scale<br>When a company can produce more goods their production costs can go down<br>Lower production costs can then mean the monopoly can choose to lower the price of their product ultimately benefiting the consumer
+</p>
+    </div>
+    <div class="w3-third w3-container">
+      <p img src="img.jpg" alt="NAME BEFORE .JPG">PICTURE</p>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Cons of a Monopoly</h1>
+      <p>High Prices<br>They can charge higher because they are the only ones producing that product<br>The consumer has no choice to but to buy from the only producer</p>
+      <br>
+      <p>Inferior Goods<br>Knowing that their product has no demand elasticity, they can produce low quality products</p>
+    </div>
+    <div class="w3-third w3-container">
+      <p img src="img.jpg" alt="NAME BEFORE .JPG">PICTURE</p>
+    </div>
+  </div>
+
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4>Footer</h4>
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open(w3_open) {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close(w3_close) {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script>
+
 </body>
+</html>
